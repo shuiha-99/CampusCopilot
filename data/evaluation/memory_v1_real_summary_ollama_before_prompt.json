@@ -1,0 +1,21 @@
+{
+  "sample_version": "memory-v1-fixed-example",
+  "sample_sha256": "de7e3195ff35aab4f578bcb7d5dc412a39d8fd9a8bb598c3d9c6b0e90b304645",
+  "provider": "ollama",
+  "model": "qwen2.5:7b",
+  "first_summary_seconds": 22.01,
+  "second_summary_seconds": 32.42,
+  "first_summary": "目标：了解国家励志奖学金的申请流程，只依据学校公开资料。\n- 需查当年学校通知确认2026年申请截止日。\n- 无需直接套用旧金额到新年份，将分别标注2024年和2025年的助学金档次。",
+  "second_summary": "目标：了解2026年国家励志奖学金的申请流程，仅依据学校公开资料。\n- 保留当年学校通知确认的2026年申请截止日。\n- 表述2024年和2025年的助学金档次差异。\n- 说明学校公示通常在哪一步发生。\n- 保留不同版本资料的金额差异，供复核。\n- 强调内部准备清单不表示学校受理或审批。\n- 仅在用户确认后创建内部准备任务。",
+  "retention_checks": {
+    "scholarship_goal": true,
+    "2026_deadline_unresolved": false,
+    "historical_amount_caveat": true,
+    "confirmed_grade_present": true
+  },
+  "measurement": "sum of content character lengths in built model messages; not tokens or billed usage",
+  "full_history_input_chars": 968,
+  "compact_memory_input_chars": 793,
+  "char_reduction_fraction": 0.1808,
+  "review_note": "人工复核发现原关键词检查误判：第二版摘要提到2026截止日，却未保留未确认状态。"
+}

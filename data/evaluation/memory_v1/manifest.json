@@ -1,0 +1,12 @@
+{
+  "version": "memory-v1",
+  "role": "fixed_development_regression_example",
+  "frozen_at": "2026-09-26",
+  "case_count": 1,
+  "message_count": 24,
+  "case_sha256": "de7e3195ff35aab4f578bcb7d5dc412a39d8fd9a8bb598c3d9c6b0e90b304645",
+  "recorded_summary_sha256": "8c44895212193d1dfe0c3430614f06f25fe7e4e42397dfffd0d8ef2b65d7586b",
+  "recorded_model": "qwen2.5:7b",
+  "measurement": "model message content characters, not tokenizer tokens",
+  "selection_note": "This case was used during prompt development; it is a frozen regression example, not an independent test set."
+}

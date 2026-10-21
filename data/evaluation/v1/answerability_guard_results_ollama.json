@@ -1,0 +1,286 @@
+{
+  "dataset_version": "v1",
+  "dataset_role": "fixed_development_regression_set",
+  "embedding_provider": "ollama",
+  "minimum_query_bigram_coverage": 0.2,
+  "label_positive": 36,
+  "label_negative": 3,
+  "false_positive_ids": [],
+  "false_negative_ids": [],
+  "cases": [
+    {
+      "id": "v1-q001",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q002",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q003",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q004",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q005",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q006",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q007",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q008",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q009",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 1,
+      "after_year_check": 1,
+      "after_topic_check": 1
+    },
+    {
+      "id": "v1-q010",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q011",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q012",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q013",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q014",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q015",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q016",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q017",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q018",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q019",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q020",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q021",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q022",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q023",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q024",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 2,
+      "after_year_check": 2,
+      "after_topic_check": 2
+    },
+    {
+      "id": "v1-q025",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q026",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q027",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 3,
+      "after_topic_check": 3
+    },
+    {
+      "id": "v1-q028",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 3,
+      "after_topic_check": 3
+    },
+    {
+      "id": "v1-q029",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q030",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 4,
+      "after_topic_check": 4
+    },
+    {
+      "id": "v1-q031",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 2,
+      "after_topic_check": 2
+    },
+    {
+      "id": "v1-q032",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 3,
+      "after_topic_check": 3
+    },
+    {
+      "id": "v1-q033",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 3,
+      "after_topic_check": 3
+    },
+    {
+      "id": "v1-q034",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q035",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 1,
+      "after_topic_check": 1
+    },
+    {
+      "id": "v1-q036",
+      "label_has_relevant_chunk": true,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 5
+    },
+    {
+      "id": "v1-q037",
+      "label_has_relevant_chunk": false,
+      "raw_retrieved": 5,
+      "after_year_check": 0,
+      "after_topic_check": 0
+    },
+    {
+      "id": "v1-q038",
+      "label_has_relevant_chunk": false,
+      "raw_retrieved": 5,
+      "after_year_check": 5,
+      "after_topic_check": 0
+    },
+    {
+      "id": "v1-q039",
+      "label_has_relevant_chunk": false,
+      "raw_retrieved": 0,
+      "after_year_check": 0,
+      "after_topic_check": 0
+    }
+  ],
+  "note": "Threshold inspected on this same development set. Passing it does not prove factual entailment, independent generalization or model refusal."
+}

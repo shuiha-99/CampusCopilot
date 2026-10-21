@@ -1,0 +1,42 @@
+{
+  "dataset_version": "v1",
+  "dataset_role": "fixed_development_regression_set",
+  "embedding_provider": "ollama",
+  "model_provider_config": "router",
+  "scope": "real model generation with the same v1 retrieval context; no HTTP, database, conversation history, or full Agent run",
+  "cases": [
+    {
+      "id": "v1-q037",
+      "query": "2026年国家励志奖学金申请截止日期是哪天",
+      "returned_chunk_ids": [
+        "sqxy_2025_aid_policy:scholarship_amount_process",
+        "sqxy_2024_admission_charter:scholarship_2024",
+        "sqxy_older_national_aid_guide:award_compatibility_old",
+        "sqxy_older_national_aid_guide:inspirational_eligibility_old",
+        "sqxy_2024_admission_charter:aid_grant_2024"
+      ],
+      "answer": null,
+      "error": "ModelTimeoutError"
+    },
+    {
+      "id": "v1-q038",
+      "query": "学校食堂一份鸡腿现在多少钱",
+      "returned_chunk_ids": [
+        "sqxy_2025_aid_policy:aid_grant_process",
+        "sqxy_2024_transfer_notice:transfer_aftercare",
+        "sqxy_2025_aid_policy:school_scholarship",
+        "sqxy_student_rules:leave_resume",
+        "sqxy_2025_aid_policy:student_loan_2025"
+      ],
+      "answer": null,
+      "error": "ModelTimeoutError"
+    },
+    {
+      "id": "v1-q039",
+      "query": "量子火箭发动机的涡轮叶片如何制造",
+      "returned_chunk_ids": [],
+      "answer": "关于量子火箭发动机的涡轮叶片制造的具体细节，目前没有公开可信的资料提供相关信息[1]。量子火箭发动机是一个高度理论化的概念，目前还没有实际应用的实例或者具体的制造技术被广泛认知。\n\n[1] 依据：资料状态未知，暂无相关技术支持或公开实例。",
+      "error": null
+    }
+  ]
+}

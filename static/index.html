@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#174c43">
+  <meta name="description" content="CampusCopilot 校园政策助手：根据公开资料查询政策、核对来源，确认后生成内部办事准备清单。">
+  <title>CampusCopilot · 校园政策助手</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="CampusCopilot 首页">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 9h7c3 0 5 2 5 5v10h-7c-3 0-5-2-5-5V9Z" stroke="currentColor" stroke-width="1.8"/><path d="M24 8h-4c-3 0-5 2-5 5v11M11 13h3M11 17h3M20 13h2M20 17h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+      <span><strong>CampusCopilot</strong><span class="brand-subtitle">校园政策助手</span></span>
+    </a>
+    <div class="header-actions">
+      <button id="service-status" class="service-status" type="button" title="刷新基础服务状态"><span class="status-dot" aria-hidden="true"></span><span id="service-label">正在检查服务</span></button>
+      <button id="new-conversation" class="button button-outline" type="button"><span aria-hidden="true">＋</span> 新对话</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span></span> 有据可查 · 有序准备</p>
+        <h1 id="page-title">校园办事，<span>先问清楚。</span></h1>
+        <p class="intro-description">从政策条件到申请准备，让分散的信息变得清晰。<br class="desktop-break">回答附公开资料来源，重要事项请再核对当年通知。</p>
+      </div>
+      <div class="intro-note" aria-label="使用范围"><span class="note-icon" aria-hidden="true">↗</span><span><strong>从一个问题开始</strong><small>奖助学金 / 转专业 / 校园政策</small></span></div>
+    </section>
+
+    <div class="workspace">
+      <div class="main-column">
+        <section class="composer-card" aria-labelledby="composer-heading">
+          <div class="section-heading"><div><p class="section-kicker">ASK CAMPUS</p><h2 id="composer-heading">你想了解什么？</h2></div><span id="conversation-label" class="subtle-tag">新对话</span></div>
+          <form id="query-form">
+            <label class="sr-only" for="question">请输入校园政策问题</label>
+            <textarea id="question" name="question" maxlength="500" rows="4" placeholder="例如：国家励志奖学金需要满足哪些条件？有哪些事项需要复核？" required></textarea>
+            <div class="example-questions" aria-label="示例问题">
+              <button type="button" class="example-button" data-question="请根据学校资料说明国家励志奖学金申请条件，并提醒我需要复核什么。">奖学金申请条件 <span aria-hidden="true">↗</span></button>
+              <button type="button" class="example-button" data-question="根据学校公开资料，转专业通常有哪些流程，需要复核哪些限制？">转专业办理流程 <span aria-hidden="true">↗</span></button>
+              <button type="button" class="example-button" data-question="2026年国家励志奖学金的申请截止日期是什么时候？">今年的申请截止日 <span aria-hidden="true">↗</span></button>
+            </div>
+            <details class="scope-details">
+              <summary><span class="scope-symbol" aria-hidden="true">◎</span> 适用范围 <span id="scope-summary" class="summary-hint">大二 · 计算机工程学院</span><span class="chevron" aria-hidden="true">⌄</span></summary>
+              <div class="scope-fields">
+                <label>年级<input id="grade" name="grade" value="大二" maxlength="32" autocomplete="off"></label>
+                <label>学院<input id="college" name="college" value="计算机工程学院" maxlength="100" autocomplete="off"></label>
+                <label class="target-major-field">拟转入专业 <small>转专业时填写</small><input id="target-major" name="target-major" placeholder="选填，例如：计算机科学与技术" maxlength="100" autocomplete="off"></label>
+              </div>
+            </details>
+            <div class="composer-footer"><span id="input-hint">Ctrl + Enter 发送 · 最多 500 字</span><button id="submit-query" class="button button-primary" type="submit"><span id="submit-label">发送问题</span><span aria-hidden="true">↗</span></button></div>
+          </form>
+        </section>
+
+        <section id="loading-state" class="loading-card" hidden aria-live="polite"><span class="loading-ring" aria-hidden="true"></span><div><strong>正在查找资料并整理回答</strong><p>真实模型响应可能需要一些时间，请稍候。</p></div><span id="elapsed-time">00:00</span></section>
+        <section id="query-error" class="notice notice-error" hidden role="alert"><div><strong>这次请求未完成</strong><p id="query-error-message"></p></div><button id="retry-query" type="button" class="button button-outline">重试</button></section>
+
+        <section id="welcome-state" class="welcome-card" aria-labelledby="welcome-heading">
+          <div class="welcome-icon" aria-hidden="true">✳</div><h2 id="welcome-heading">一个问题，一条清晰的准备路径。</h2><p>这里使用商丘学院公开资料进行演示。你可以这样开始：</p>
+          <div class="welcome-steps"><div><span>01</span><strong>说明你的情况</strong><p>填写年级与学院，提出具体问题。</p></div><div><span>02</span><strong>查看回答和出处</strong><p>区分政策依据与待核实的信息。</p></div><div><span>03</span><strong>确认后做准备</strong><p>适用时生成项目内部准备清单。</p></div></div>
+          <div class="welcome-bottom"><span aria-hidden="true">ⓘ</span> 不连接真实校务系统，不代替提交申请或审批。</div>
+        </section>
+
+        <div id="answers" class="answers" aria-live="polite" aria-relevant="additions"></div>
+        <section id="action-section" class="action-card" hidden aria-labelledby="action-heading"><div class="action-top"><div><p class="section-kicker">NEXT STEP</p><h2 id="action-heading">把下一步准备好</h2><p id="action-description"></p></div><span class="action-icon" aria-hidden="true">✓</span></div><div id="action-feedback" class="inline-feedback" hidden role="status"></div><div id="action-controls"><button id="create-draft" class="button button-primary" type="button">查看准备清单草稿 <span aria-hidden="true">→</span></button><small>先查看内容，再由你明确确认。</small></div><div id="task-result" hidden></div></section>
+      </div>
+
+      <aside class="side-column" aria-label="运行记录与使用说明">
+        <details id="trace-panel" class="trace-panel" open>
+          <summary><span><span class="trace-symbol" aria-hidden="true">⌁</span> 本次运行记录</span><span class="chevron" aria-hidden="true">⌄</span></summary>
+          <div class="trace-body"><div class="trace-intro"><p>看看答案是如何产生的。</p><button id="refresh-trace" type="button" class="text-button" disabled>刷新记录 ↻</button></div><div id="trace-content"><div class="trace-empty"><span aria-hidden="true">⌁</span><strong>等待你的第一个问题</strong><p>提问后，这里会显示检索、模型调用与执行步骤。</p></div></div></div>
+        </details>
+        <section class="side-note"><span class="side-note-icon" aria-hidden="true">◈</span><h2>答案有边界，来源可核对。</h2><p>历史资料可能与当前安排不同。金额、资格和截止时间，请以学校当年正式通知为准。</p><a href="/docs" target="_blank" rel="noopener noreferrer">打开 API 文档 <span aria-hidden="true">↗</span></a></section>
+        <details class="demo-settings"><summary>演示设置 <span aria-hidden="true">⌄</span></summary><p>浏览器生成的演示标识，用于关联本机对话，不代表登录认证。</p><label>演示标识<input id="demo-user-id" readonly aria-label="当前浏览器演示标识"></label></details>
+      </aside>
+    </div>
+    <footer class="site-footer"><span>CampusCopilot</span><p>公开资料辅助查询 · 重要信息请向学校核实</p><span class="footer-local">本机演示</span></footer>
+  </main>
+
+  <dialog id="confirmation-dialog" aria-labelledby="confirmation-title" aria-describedby="confirmation-description">
+    <div class="dialog-heading"><span class="dialog-icon" aria-hidden="true">✓</span><button id="close-confirmation" class="icon-button" type="button" aria-label="关闭确认窗口">×</button></div>
+    <p class="section-kicker">YOUR CONFIRMATION</p><h2 id="confirmation-title">确认创建准备任务？</h2><p id="confirmation-description">请先核对这份草稿的内容。</p><div id="draft-summary" class="draft-summary"></div><p id="draft-warning" class="dialog-warning"></p><p id="draft-expiry" class="muted"></p><div id="confirmation-error" class="notice notice-error" hidden role="alert"></div><div class="dialog-buttons"><button id="cancel-confirmation" class="button button-outline" type="button">暂不创建</button><button id="confirm-action" class="button button-primary" type="button">确认创建任务</button></div>
+  </dialog>
+</body>
+</html>

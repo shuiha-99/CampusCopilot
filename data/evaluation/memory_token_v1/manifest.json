@@ -1,0 +1,10 @@
+{
+  "version": "memory-token-v1",
+  "role": "fixed_development_regression_set",
+  "frozen_at": "2026-09-26",
+  "case_count": 2,
+  "legacy_case_sha256": "de7e3195ff35aab4f578bcb7d5dc412a39d8fd9a8bb598c3d9c6b0e90b304645",
+  "additional_cases_sha256": "e9e012dee9fe2223ed94a0f18ad7a3cd092945779d92110de5e1cecdc0b5ec1a",
+  "model": "qwen2.5:7b",
+  "note": "The scholarship case participated in earlier prompt development; both cases are fixed before this token experiment, not independent holdout data."
+}

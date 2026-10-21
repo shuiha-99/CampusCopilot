@@ -1,0 +1,30 @@
+{
+  "environment": "real MySQL, Ollama classification and answer, in-process HTTP Trace",
+  "run_status": "SUCCEEDED",
+  "classification": {
+    "status": "VALIDATED",
+    "model_intent": "scholarship",
+    "model_risk_level": "LOW"
+  },
+  "effective_intent": "scholarship",
+  "effective_risk_level": "HIGH",
+  "model_attempts": [
+    {
+      "attempt_no": 1,
+      "provider": "ollama",
+      "operation": "classification",
+      "status": "SUCCEEDED",
+      "error_code": null
+    },
+    {
+      "attempt_no": 2,
+      "provider": "ollama",
+      "operation": "answer",
+      "status": "SUCCEEDED",
+      "error_code": null
+    }
+  ],
+  "citation_count": 0,
+  "can_create_task": false,
+  "action_created": false
+}

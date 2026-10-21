@@ -1,0 +1,804 @@
+{
+  "dataset_version": "v1",
+  "dataset_role": "fixed_development_regression_set",
+  "sources_sha256": "a1f60d17e5b232f4ad7c6b2e1151cdca243be80640548461f5492de60770ecd0",
+  "cases_sha256": "2d31c41be76ee9b87ff1cf9f8fef7f42089f0438419dcd4c4dfdde86f2076522",
+  "source_count": 6,
+  "chunk_count": 19,
+  "case_count": 39,
+  "embedding_provider": "hash",
+  "embedding_model": "HashingEmbedding-384",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "index_path": "E:\\download\\shuijiabao\\importSoft\\codex_workspace\\CampusCopilot\\2026-09-14\\x-z\\work\\campus_copilot\\data\\evaluation\\v1\\chroma_hash",
+    "indexing_ms": 193.67,
+    "query_order": "case order for each mode: bm25, vector, hybrid",
+    "warmup": "first three queries before each mode, excluded from latency samples",
+    "cache": "query vector cache cleared before each sample",
+    "latency_scope": "retriever.search only; excludes indexing, answer generation and HTTP"
+  },
+  "modes": {
+    "bm25": {
+      "attempted_queries": 39,
+      "completed_queries": 39,
+      "errors": [],
+      "error_rate": 0.0,
+      "answerable_queries_completed": 36,
+      "unanswerable_queries_completed": 3,
+      "recall_at_5": 0.9563,
+      "mrr": 0.8667,
+      "unanswerable_without_retrieved_evidence": 1,
+      "latency_ms": {
+        "samples": 39,
+        "p95_nearest_rank": 5.8,
+        "median": 4.86,
+        "max": 5.84
+      },
+      "cases": [
+        {
+          "id": "v1-q001",
+          "relevant_count": 3,
+          "found_count": 3,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q002",
+          "relevant_count": 3,
+          "found_count": 3,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q003",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q004",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q005",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 3
+        },
+        {
+          "id": "v1-q006",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q007",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q008",
+          "relevant_count": 7,
+          "found_count": 3,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q009",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q010",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q011",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q012",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 5
+        },
+        {
+          "id": "v1-q013",
+          "relevant_count": 5,
+          "found_count": 5,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q014",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q015",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q016",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q017",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q018",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q019",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q020",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q021",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q022",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q023",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q024",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q025",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q026",
+          "relevant_count": 3,
+          "found_count": 3,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q027",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q028",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q029",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 3
+        },
+        {
+          "id": "v1-q030",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q031",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q032",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 3
+        },
+        {
+          "id": "v1-q033",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q034",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q035",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q036",
+          "relevant_count": 1,
+          "found_count": 0,
+          "first_relevant_rank": null
+        }
+      ],
+      "unanswerable_cases": [
+        {
+          "id": "v1-q037",
+          "returned_chunk_ids": [
+            "sqxy_2025_aid_policy:scholarship_amount_process",
+            "sqxy_2024_admission_charter:scholarship_2024",
+            "sqxy_older_national_aid_guide:award_compatibility_old",
+            "sqxy_older_national_aid_guide:inspirational_eligibility_old",
+            "sqxy_2024_admission_charter:aid_grant_2024"
+          ]
+        },
+        {
+          "id": "v1-q038",
+          "returned_chunk_ids": [
+            "sqxy_2025_aid_policy:aid_grant_process",
+            "sqxy_2024_transfer_notice:transfer_aftercare",
+            "sqxy_student_rules:leave_resume",
+            "sqxy_2025_aid_policy:school_scholarship",
+            "sqxy_2025_aid_policy:student_loan_2025"
+          ]
+        },
+        {
+          "id": "v1-q039",
+          "returned_chunk_ids": []
+        }
+      ]
+    },
+    "vector": {
+      "attempted_queries": 39,
+      "completed_queries": 39,
+      "errors": [],
+      "error_rate": 0.0,
+      "answerable_queries_completed": 36,
+      "unanswerable_queries_completed": 3,
+      "recall_at_5": 0.8992,
+      "mrr": 0.7241,
+      "unanswerable_without_retrieved_evidence": 1,
+      "latency_ms": {
+        "samples": 39,
+        "p95_nearest_rank": 9.3,
+        "median": 8.16,
+        "max": 9.99
+      },
+      "cases": [
+        {
+          "id": "v1-q001",
+          "relevant_count": 3,
+          "found_count": 3,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q002",
+          "relevant_count": 3,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q003",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q004",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q005",
+          "relevant_count": 2,
+          "found_count": 0,
+          "first_relevant_rank": null
+        },
+        {
+          "id": "v1-q006",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q007",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q008",
+          "relevant_count": 7,
+          "found_count": 4,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q009",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q010",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 5
+        },
+        {
+          "id": "v1-q011",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q012",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 5
+        },
+        {
+          "id": "v1-q013",
+          "relevant_count": 5,
+          "found_count": 4,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q014",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q015",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q016",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q017",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q018",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q019",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q020",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 3
+        },
+        {
+          "id": "v1-q021",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q022",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q023",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q024",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q025",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q026",
+          "relevant_count": 3,
+          "found_count": 2,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q027",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q028",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q029",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q030",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q031",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q032",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q033",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q034",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q035",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 3
+        },
+        {
+          "id": "v1-q036",
+          "relevant_count": 1,
+          "found_count": 0,
+          "first_relevant_rank": null
+        }
+      ],
+      "unanswerable_cases": [
+        {
+          "id": "v1-q037",
+          "returned_chunk_ids": [
+            "sqxy_2025_aid_policy:scholarship_amount_process",
+            "sqxy_older_national_aid_guide:award_compatibility_old",
+            "sqxy_2024_admission_charter:scholarship_2024",
+            "sqxy_2025_aid_policy:school_scholarship",
+            "sqxy_2025_aid_policy:student_loan_2025"
+          ]
+        },
+        {
+          "id": "v1-q038",
+          "returned_chunk_ids": [
+            "sqxy_student_rules:leave_resume",
+            "sqxy_2025_aid_policy:school_scholarship"
+          ]
+        },
+        {
+          "id": "v1-q039",
+          "returned_chunk_ids": []
+        }
+      ]
+    },
+    "hybrid": {
+      "attempted_queries": 39,
+      "completed_queries": 39,
+      "errors": [],
+      "error_rate": 0.0,
+      "answerable_queries_completed": 36,
+      "unanswerable_queries_completed": 3,
+      "recall_at_5": 0.9603,
+      "mrr": 0.8736,
+      "unanswerable_without_retrieved_evidence": 1,
+      "latency_ms": {
+        "samples": 39,
+        "p95_nearest_rank": 9.52,
+        "median": 8.72,
+        "max": 9.8
+      },
+      "cases": [
+        {
+          "id": "v1-q001",
+          "relevant_count": 3,
+          "found_count": 3,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q002",
+          "relevant_count": 3,
+          "found_count": 3,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q003",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q004",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q005",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 4
+        },
+        {
+          "id": "v1-q006",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q007",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q008",
+          "relevant_count": 7,
+          "found_count": 4,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q009",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q010",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q011",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q012",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 5
+        },
+        {
+          "id": "v1-q013",
+          "relevant_count": 5,
+          "found_count": 5,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q014",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q015",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q016",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q017",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q018",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q019",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q020",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q021",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q022",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q023",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q024",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q025",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q026",
+          "relevant_count": 3,
+          "found_count": 3,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q027",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q028",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q029",
+          "relevant_count": 2,
+          "found_count": 2,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q030",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q031",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q032",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q033",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q034",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "v1-q035",
+          "relevant_count": 1,
+          "found_count": 1,
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "v1-q036",
+          "relevant_count": 1,
+          "found_count": 0,
+          "first_relevant_rank": null
+        }
+      ],
+      "unanswerable_cases": [
+        {
+          "id": "v1-q037",
+          "returned_chunk_ids": [
+            "sqxy_2025_aid_policy:scholarship_amount_process",
+            "sqxy_older_national_aid_guide:award_compatibility_old",
+            "sqxy_2024_admission_charter:scholarship_2024",
+            "sqxy_older_national_aid_guide:inspirational_eligibility_old",
+            "sqxy_2024_admission_charter:aid_grant_2024"
+          ]
+        },
+        {
+          "id": "v1-q038",
+          "returned_chunk_ids": [
+            "sqxy_2024_transfer_notice:transfer_aftercare",
+            "sqxy_2025_aid_policy:aid_grant_process",
+            "sqxy_student_rules:leave_resume",
+            "sqxy_2025_aid_policy:school_scholarship",
+            "sqxy_2025_aid_policy:student_loan_2025"
+          ]
+        },
+        {
+          "id": "v1-q039",
+          "returned_chunk_ids": []
+        }
+      ]
+    }
+  },
+  "note": "No-evidence count is retrieval behavior, not a generation refusal test. This set is used for development/regression, not independent test."
+}

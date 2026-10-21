@@ -1,0 +1,12 @@
+{
+  "version": "v1",
+  "role": "fixed_development_regression_set",
+  "frozen_at": "2026-09-25",
+  "annotation_reviewer": "project_mentor_initial_review",
+  "annotation_scope": "each of 39 questions checked against all 19 chunks in the six-source snapshot, including the 26 previous questions after source expansion",
+  "source_count": 6,
+  "chunk_count": 19,
+  "case_count": 39,
+  "sources_sha256": "a1f60d17e5b232f4ad7c6b2e1151cdca243be80640548461f5492de60770ecd0",
+  "cases_sha256": "2d31c41be76ee9b87ff1cf9f8fef7f42089f0438419dcd4c4dfdde86f2076522"
+}

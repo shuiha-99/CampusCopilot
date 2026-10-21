@@ -1,0 +1,33 @@
+{
+  "sample_version": "memory-v1-fixed-example",
+  "sample_sha256": "de7e3195ff35aab4f578bcb7d5dc412a39d8fd9a8bb598c3d9c6b0e90b304645",
+  "measurement": "sum of content character lengths in built model messages; not tokens or billed usage",
+  "real_generation_model_called": false,
+  "injected_generator_called": true,
+  "summarizer": "deterministic fixed fixture, not an LLM quality test",
+  "message_count": 24,
+  "recent_message_count": 10,
+  "snapshot_versions": [
+    1,
+    2
+  ],
+  "v1_new_messages": 6,
+  "v2_new_messages": 8,
+  "failure_left_snapshot_count": 0,
+  "retry_created_v1": true,
+  "active_facts_after_update_revoke": {
+    "grade": "大三"
+  },
+  "retained_checks": [
+    "国家励志奖学金",
+    "2026年截止日",
+    "大三"
+  ],
+  "full_history_input_chars": 968,
+  "compact_memory_input_chars": 709,
+  "char_reduction_fraction": 0.2676,
+  "trace_snapshot_id_matches": true,
+  "trace_snapshot_version": 2,
+  "trace_memory_used_in_model_context": true,
+  "trace_validation": "real MySQL and in-process HTTP; injected answer generator"
+}

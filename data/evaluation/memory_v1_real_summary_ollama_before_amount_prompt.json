@@ -1,0 +1,25 @@
+{
+  "sample_version": "memory-v1-fixed-example",
+  "sample_sha256": "de7e3195ff35aab4f578bcb7d5dc412a39d8fd9a8bb598c3d9c6b0e90b304645",
+  "provider": "ollama",
+  "model": "qwen2.5:7b",
+  "first_summary_seconds": 24.67,
+  "second_summary_seconds": 37.82,
+  "first_summary": "目标：了解国家励志奖学金的申请流程，依据学校公开资料。  \n问题：  \n- 2026年申请截止日未确认/待核对，需查当年学校通知。  \n- 2024年和2025年的助学金档次需分别标注年份，不能直接比较。",
+  "second_summary": "目标：\n- 了解国家励志奖学金的申请流程，依据学校公开资料。\n\n问题：\n- 2026年申请截止日未确认/待核对，需查当年学校通知。\n- 2024年和2025年的助学金档次需分别标注年份，不能直接比较。\n- 资料版本之间金额不同需保留差异提醒。\n- 确认后才会创建内部准备任务。\n\n注：\n- 学校公示通常在哪一步发生？\n- 内部准备清单不代表学校已经受理或审批。",
+  "retention_checks": {
+    "scholarship_goal": true,
+    "2026_deadline_unresolved": true,
+    "confirmed_grade_present": true,
+    "2024_2025_amounts_separated": true,
+    "historical_amount_not_current_2026": false
+  },
+  "deadline_clauses_checked": [
+    "- 2026年申请截止日未确认/待核对，需查当年学校通知"
+  ],
+  "measurement": "sum of content character lengths in built model messages; not tokens or billed usage",
+  "full_history_input_chars": 968,
+  "compact_memory_input_chars": 810,
+  "char_reduction_fraction": 0.1632,
+  "review_note": "复核后确认摘要区分了2024/2025金额，但未明确写出旧金额不能作为2026现行标准，不能计为该限制完整保留。"
+}

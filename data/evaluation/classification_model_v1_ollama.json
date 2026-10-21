@@ -1,0 +1,34 @@
+{
+  "provider": "ollama",
+  "model": "qwen2.5:7b",
+  "cases": [
+    {
+      "message": "请帮我创建奖学金准备清单",
+      "expected_intent": "scholarship",
+      "minimum_risk": "HIGH",
+      "raw": "{\"intent\":\"scholarship\",\"risk_level\":\"LOW\"}",
+      "parsed": {
+        "intent": "scholarship",
+        "risk_level": "LOW"
+      },
+      "structure_valid": true,
+      "intent_matches": true,
+      "risk_not_below_expected": false,
+      "elapsed_seconds": 14.22
+    },
+    {
+      "message": "我想了解转入软件工程专业要满足什么条件",
+      "expected_intent": "major_transfer",
+      "minimum_risk": "LOW",
+      "raw": "{\"intent\":\"major_transfer\",\"risk_level\":\"LOW\"}",
+      "parsed": {
+        "intent": "major_transfer",
+        "risk_level": "LOW"
+      },
+      "structure_valid": true,
+      "intent_matches": true,
+      "risk_not_below_expected": true,
+      "elapsed_seconds": 12.89
+    }
+  ]
+}

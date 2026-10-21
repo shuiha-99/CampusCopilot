@@ -1,0 +1,75 @@
+{
+  "tune": {
+    "vector": {
+      "queries": 13,
+      "answerable_queries": 13,
+      "unanswerable_queries": 0,
+      "recall_at_5": 1.0,
+      "mrr": 0.7654
+    },
+    "bm25": {
+      "queries": 13,
+      "answerable_queries": 13,
+      "unanswerable_queries": 0,
+      "recall_at_5": 1.0,
+      "mrr": 1.0
+    },
+    "hybrid": {
+      "queries": 13,
+      "answerable_queries": 13,
+      "unanswerable_queries": 0,
+      "recall_at_5": 1.0,
+      "mrr": 0.9038
+    }
+  },
+  "holdout": {
+    "vector": {
+      "queries": 13,
+      "answerable_queries": 13,
+      "unanswerable_queries": 0,
+      "recall_at_5": 0.9615,
+      "mrr": 0.6564
+    },
+    "bm25": {
+      "queries": 13,
+      "answerable_queries": 13,
+      "unanswerable_queries": 0,
+      "recall_at_5": 0.9615,
+      "mrr": 0.7949
+    },
+    "hybrid": {
+      "queries": 13,
+      "answerable_queries": 13,
+      "unanswerable_queries": 0,
+      "recall_at_5": 0.9615,
+      "mrr": 0.8397
+    }
+  },
+  "all": {
+    "vector": {
+      "queries": 26,
+      "answerable_queries": 26,
+      "unanswerable_queries": 0,
+      "recall_at_5": 0.9808,
+      "mrr": 0.7109
+    },
+    "bm25": {
+      "queries": 26,
+      "answerable_queries": 26,
+      "unanswerable_queries": 0,
+      "recall_at_5": 0.9808,
+      "mrr": 0.8974
+    },
+    "hybrid": {
+      "queries": 26,
+      "answerable_queries": 26,
+      "unanswerable_queries": 0,
+      "recall_at_5": 0.9808,
+      "mrr": 0.8718
+    }
+  },
+  "dataset_status": "legacy_exploratory_not_frozen",
+  "embedding_provider": "hash",
+  "questions_sha256": "f36a0bf3b9988e3f87aa8339f474a1c315b1b9b28d603b206064d9e8419ca9dd",
+  "sources_sha256": "6e72bd9335b0a5332126e1c31c2ac433de01e6912b367ef40adb23061933dcf4"
+}

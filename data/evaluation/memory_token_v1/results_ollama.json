@@ -1,0 +1,102 @@
+{
+  "version": "memory-token-v1",
+  "model": "qwen2.5:7b",
+  "provider": "local Ollama OpenAI-compatible API",
+  "case_count": 2,
+  "usage_source": "provider response usage; not character or tokenizer estimate",
+  "answer_method": "same model/question/evidence, max_tokens=1 to measure prompt tokens",
+  "summary_cost_included": true,
+  "cases": [
+    {
+      "id": "scholarship_2026_unknown_deadline",
+      "message_count": 24,
+      "recent_message_count": 10,
+      "summary_calls": [
+        {
+          "prompt_tokens": 327,
+          "completion_tokens": 137,
+          "total_tokens": 464,
+          "elapsed_seconds": 32.83
+        },
+        {
+          "prompt_tokens": 461,
+          "completion_tokens": 177,
+          "total_tokens": 638,
+          "elapsed_seconds": 40.54
+        }
+      ],
+      "summary_total_tokens": 1102,
+      "baseline_answer": {
+        "prompt_tokens": 717,
+        "completion_tokens": 1,
+        "total_tokens": 718,
+        "elapsed_seconds": 19.37
+      },
+      "memory_answer": {
+        "prompt_tokens": 609,
+        "completion_tokens": 1,
+        "total_tokens": 610,
+        "elapsed_seconds": 18.67
+      },
+      "answer_prompt_tokens_saved": 108,
+      "answer_prompt_reduction_fraction": 0.1506,
+      "net_tokens_after_one_answer": -994,
+      "answers_until_positive_net_saving": 11,
+      "quality_checks": {
+        "topic": true,
+        "target_year": true,
+        "deadline_unknown": true,
+        "historical_amount_limit": true,
+        "year_tiers_separated": true
+      },
+      "all_quality_checks_passed": true,
+      "summary_text": "目标：了解国家励志奖学金的申请流程，依据学校公开资料并区分历史资料与现行通知。\n\n限制：\n- 2026年申请截止日未确认，需查当年学校通知。\n- 2024年和2025年助学金档次区别对待，当前金额未确认，需核对。\n- 当前年度助学金金额未确认，不应直接采用旧年份的标准。\n\n结论及问题：\n- 申请流程依据学校公开资料。\n- 2024年和2025年助学金档次需分别核对。\n- 2026年申请截止日需确认。\n- 资料版本之间金额有差异，当前版本需核对确认。\n\n内部准备事项：\n- 会提醒申请人在完成准备后显式确认再创建内部准备任务。"
+    },
+    {
+      "id": "major_transfer_unknown_year",
+      "message_count": 24,
+      "recent_message_count": 10,
+      "summary_calls": [
+        {
+          "prompt_tokens": 290,
+          "completion_tokens": 62,
+          "total_tokens": 352,
+          "elapsed_seconds": 23.94
+        },
+        {
+          "prompt_tokens": 364,
+          "completion_tokens": 131,
+          "total_tokens": 495,
+          "elapsed_seconds": 36.99
+        }
+      ],
+      "summary_total_tokens": 847,
+      "baseline_answer": {
+        "prompt_tokens": 648,
+        "completion_tokens": 1,
+        "total_tokens": 649,
+        "elapsed_seconds": 24.99
+      },
+      "memory_answer": {
+        "prompt_tokens": 550,
+        "completion_tokens": 1,
+        "total_tokens": 551,
+        "elapsed_seconds": 21.73
+      },
+      "answer_prompt_tokens_saved": 98,
+      "answer_prompt_reduction_fraction": 0.1512,
+      "net_tokens_after_one_answer": -749,
+      "answers_until_positive_net_saving": 9,
+      "quality_checks": {
+        "topic": true,
+        "target_year": true,
+        "deadline_unknown": true,
+        "historical_source_limit": true,
+        "no_school_submission": true
+      },
+      "all_quality_checks_passed": true,
+      "summary_text": "- 2026年转专业的准备流程需参考当年的正式通知和适用范围。\n- 2024年的历史通知不能作为2026年办理规则的依据。\n- 2026年的报名截止时间未确认，需等待当年正式通知。\n- 未确认目标学院是否允许申请目标专业。\n- 学院和专业限制要以当年通知为准。\n- 大二年级信息不能证明转专业资格。\n- 准备材料和正式提交需区分，内部核对清单不代表已向学校提交。\n- 当年规定与往年不同需明确来源。"
+    }
+  ],
+  "quality_scoring_note": "Rescored saved summaries without model calls; the historical amount check now recognizes the equivalent Chinese wording 不应."
+}

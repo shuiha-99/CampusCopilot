@@ -1,0 +1,30 @@
+{
+  "dataset_version": "v1",
+  "scope": "real Ollama embedding and MySQL with in-process HTTP; model generation is intentionally skipped by evidence guards",
+  "cases": [
+    {
+      "id": "v1-q037",
+      "raw_retrieved": 5,
+      "answer_citations": 0,
+      "model_attempts": 0,
+      "run_status": "SUCCEEDED",
+      "answer": "当前知识库没有找到足够证据，不能可靠回答这个问题。\n检索到的旧资料仅供历史对照，不能证明所问年份的情况：商丘学院2025年单独考试招生章程（学生资助政策）（2025-03-26，https://www.sqxy.edu.cn/squ_zsb/contents/159/28136.html）；商丘学院2024年招生章程（资助措施）（2024-05-10，https://www.sqxy.edu.cn/squ_zsb/contents/159/28133.html）。\n\n注意：检索结果包含历史资料，涉及当前办理日期或金额时必须复核最新通知。 不同版本资料中的奖助金额不一致，系统不会自动把发布日期较新的页面判定为当前有效政策。 缺少适用范围信息时，系统不会替你推测个人资格。"
+    },
+    {
+      "id": "v1-q038",
+      "raw_retrieved": 5,
+      "answer_citations": 0,
+      "model_attempts": 0,
+      "run_status": "SUCCEEDED",
+      "answer": "当前知识库没有找到足够证据，不能可靠回答这个问题。"
+    },
+    {
+      "id": "v1-q039",
+      "raw_retrieved": 0,
+      "answer_citations": 0,
+      "model_attempts": 0,
+      "run_status": "SUCCEEDED",
+      "answer": "当前知识库没有找到足够证据，不能可靠回答这个问题。"
+    }
+  ]
+}

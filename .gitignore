@@ -1,0 +1,13 @@
+.venv/
+.idea/
+__pycache__/
+*.py[cod]
+.env
+.pytest_cache/
+data/chroma/
+data/evaluation/v1/chroma_hash/
+data/evaluation/v1/chroma_ollama/
+data/memurai/
+data/ollama/
+tools/ollama/
+config/cache-server.path
